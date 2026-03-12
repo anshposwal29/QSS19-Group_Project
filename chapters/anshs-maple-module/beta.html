@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Ansh's Beta Tester</title>
+  <link rel="stylesheet" href="chapter.css" />
+  <style>
+    /* Quick sandbox styles to mimic the main website */
+    body { margin: 0; font-family: sans-serif; background: #fbfaf7; }
+    .sandbox-container { position: relative; padding-bottom: 100vh; }
+    .sticky-vis { position: sticky; top: 0; height: 100vh; width: 100%; background: #fff; z-index: 1; }
+    .steps-container { position: relative; z-index: 2; margin-top: -100vh; pointer-events: none; }
+    .step { height: 100vh; display: flex; align-items: center; justify-content: center; }
+    .step-card { background: rgba(255,255,255,0.9); padding: 20px; border: 1px solid #ccc; width: 300px; pointer-events: auto; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body>
+
+  <div class="sandbox-container">
+    <div class="sticky-vis" id="vis-mount"></div>
+
+   <article>
+  <div class="step" data-step="anshs-maple-module-sap">
+    <p>Step 1: Sap Collection</p>
+  </div>
+  <div class="step" data-step="anshs-maple-module-flask">
+    <p>Step 2: Distillation</p>
+  </div>
+  <div class="step" data-step="anshs-maple-module-crate">
+    <p>Step 3: Packaging</p>
+  </div>
+  <div class="step" data-step="anshs-maple-module-shipping">
+    <p>Step 4: Shipping</p>
+  </div>
+  <div id="anshs-maple-module-outro" class="step"></div>
+</article>
+  </div>
+
+  <script type="module">
+    import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
+    import scrollama from "https://cdn.jsdelivr.net/npm/scrollama@3.2.0/+esm";
+    // Import YOUR specific chapter code!
+    import { createChapter } from "./chapter.js";
+
+    // 1. Initialize your chapter (pretending to be the main.js file)
+    const mountNode = document.getElementById("vis-mount");
+    const chapter = createChapter();
+    
+    // We pass it empty fake data so your init() function doesn't crash
+    chapter.init(mountNode, { shared: {}, manifest: { namespace: "anshs-maple-module" }, chapterData: {} });
+    chapter.resize(mountNode.clientWidth, mountNode.clientHeight);
+
+    // 2. Set up a mini Scrollama watcher to trigger your onStepEnter function
+    const scroller = scrollama();
+    scroller
+      .setup({ step: ".step", offset: 0.5 })
+      .onStepEnter(({ element, direction }) => {
+        const stepId = element.getAttribute("data-step");
+        // Tell your code which step we just scrolled to!
+        chapter.onStepEnter(stepId, direction); 
+      });
+
+    // 3. Keep it responsive
+    window.addEventListener("resize", () => {
+      scroller.resize();
+      chapter.resize(mountNode.clientWidth, mountNode.clientHeight);
+    });
+  </script>
+</body>
+</html>
+

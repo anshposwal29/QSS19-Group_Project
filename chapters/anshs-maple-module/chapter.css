@@ -1,0 +1,46 @@
+/* Styling for our specific chapter elements */
+.ansh-maple-module .scene-layer {
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+.sap-drop {
+  fill: #64b5f6;
+  animation: drip 1.5s infinite linear;
+}
+
+.steam-cloud {
+  fill: #eceff1;
+  opacity: 0.7;
+  animation: rise 3s infinite alternate ease-in-out;
+}
+
+/* Simple CSS animations for continuous movement */
+@keyframes drip {
+  0% { transform: translateY(0); opacity: 1; }
+  80% { opacity: 1; }
+  100% { transform: translateY(80px); opacity: 0; }
+}
+
+@keyframes rise {
+  0% { transform: translateY(0) scale(1); opacity: 0.5; }
+  100% { transform: translateY(-20px) scale(1.1); opacity: 0.8; }
+}
+
+/* Keep the animations from before */
+@keyframes drip {
+  0% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(80px); opacity: 0; }
+}
+
+/* NEW: Push the text boxes to the right so they don't cover the tree */
+.anshs-maple-module .step {
+  display: flex !important;
+  justify-content: flex-end !important;
+  padding-right: 5vw; /* Gives it a nice margin from the right edge */
+}
+
+/* Optional: Make the card text align slightly better */
+.anshs-maple-module .step-card {
+  text-align: left;
+  max-width: 350px;
+}

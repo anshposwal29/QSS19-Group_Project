@@ -1,0 +1,29 @@
+{
+  "id": "anshs-maple-module",
+  "title": "The Maple Journey",
+  "namespace": "anshs-maple-module",
+  "order": 1,
+  "steps": [
+    {
+      "id": "anshs-maple-module-sap",
+      "label": "Collection",
+      "text": "The sap flows from the tree into buckets. Note the different particles: blue sap, alongside trace amounts of green PFAS and gray lead from older equipment."
+    },
+    {
+      "id": "anshs-maple-module-flask",
+      "label": "Distillation",
+      "text": "The raw, watery sap is boiled down to a fraction of its volume, concentrating into a thick, amber syrup in a classic flask."
+    },
+    {
+      "id": "anshs-maple-module-crate",
+      "label": "Packaging",
+      "text": "The sealed flasks are carefully packed into wooden crates, preparing them for the journey ahead."
+    },
+    {
+      "id": "anshs-maple-module-shipping",
+      "label": "Shipping",
+      "text": "Finally, the heavy crates are loaded onto trucks to be distributed safely across the country."
+    }
+  ]
+}
+
