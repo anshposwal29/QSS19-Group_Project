@@ -1,0 +1,28 @@
+{
+  "id": "chapter-01-wiid",
+  "title": "Maple Stuff",
+  "order": 1,
+  "namespace": "c01",
+  "steps": [
+    {
+      "id": "c01-step-01",
+      "label": "Known PFAS-related health effects",
+      "text": "• Developmental Problems in Children\n• Increased Risk of Cancer\n• Weakens Effectiveness of Immune System\n• Interference with Natural Hormones\n• Increased Cholesterol"
+    },
+    {
+      "id": "c01-step-02",
+      "label": "Why Not Just Remove Them?",
+      "text": "PFAS are often too small to filter away. They also contain Carbon-Fluorine bonds which are too strong to break, giving them the nickname 'Forever Chemicals'."
+    },
+    {
+      "id": "c01-step-03",
+      "label": "We can filter through sugaring to find PFAS concentrations!",
+      "text": "More info! We can learn about nature and ourselves through this project."
+    },
+    {
+      "id": "c01-step-04",
+      "label": "What's next in the story?",
+      "text": "Text to finish off the chapter. This text should help us bridge to the next chapter, whatever it might be about!"
+    }
+  ]
+}
