@@ -559,12 +559,6 @@ export function createChapter() {
 
     }
 
-    function step04() {
-        renderBase();
-
-        const person = drawPerson(svg, width * 0.6, height * 0.55, 1.2);
-        person.style("opacity", 1);
-    }
 
     function applyStep(stepId) {
         currentStepId = stepId;
@@ -572,7 +566,6 @@ export function createChapter() {
         if (stepId === "c01-step-01") return step01();
         if (stepId === "c01-step-02") return step02();
         if (stepId === "c01-step-03") return step03();
-        if (stepId === "c01-step-04") return step04();
 
         step01();
     }
