@@ -1,0 +1,29 @@
+{
+  "id": "chapter-syrup",
+  "title": "The Syrup Bottle",
+  "order": 2,
+  "namespace": "syrup",
+  "dataFiles": [],
+  "steps": [
+    {
+      "id":    "syrup-table",
+      "label": "To the Breakfast Table",
+      "text":  "Sap is collected, transported, and boiled down into maple syrup. Each step in this journey is a potential site of concentration, dilution, or filtration. What began in the environment may end up on your plate — possibly unseen and unmeasured."
+    },
+    {
+      "id":    "syrup-reveal",
+      "label": "What's Inside?",
+      "text":  "A closer look at the syrup reveals something invisible to the naked eye. PFAS molecules and heavy metals, if present, would be suspended throughout — indistinguishable from the syrup itself."
+    },
+    {
+      "id":    "syrup-pfas",
+      "label": "What Are PFAS?",
+      "text":  "PFAS — per- and polyfluoroalkyl substances — are a family of thousands of synthetic chemicals. Their presence in food systems is now under active scientific investigation. The question for maple syrup: are they there, and if so, at what concentrations?"
+    },
+    {
+      "id":    "syrup-zoom",
+      "label": "Too Small to See, Too Stable to Remove",
+      "text":  "Carbon–fluorine bonds are among the strongest in all of organic chemistry. PFAS are too small for conventional filters and too chemically stable for heat, water, or biology to break. That is why they earned the nickname: Forever Chemicals."
+    }
+  ]
+}
