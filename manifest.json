@@ -1,0 +1,20 @@
+{
+  "id": "chapter-03-leaf",
+  "title": "Leaf Stuff",
+  "order": 3,
+  "namespace": "c03",
+  "steps": [
+    {
+      "id": "c03-step-01",
+      "label": "they are in our air"
+    },
+    {
+        "id": "c03-step-02",
+        "label": "in our water"
+    },
+    {
+        "id": "c03-step-03",
+        "label": "and in our syrup"
+    }
+]
+}
