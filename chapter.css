@@ -1,0 +1,38 @@
+/* chapters/intro/chapter.css */
+
+.intro .chapter-vis {
+  background: #b8d4e8;
+  transition: background 0.8s ease;
+}
+
+.intro .vis-mount {
+  overflow: hidden;
+}
+
+.intro-svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Override step card for this chapter's dark scenes */
+.intro .step-card {
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  background: rgba(255, 255, 255, 0.72);
+}
+
+/* Darker card variant for microscopic/chemistry scenes */
+.intro[data-dark="true"] .step-card {
+  background: rgba(15, 25, 40, 0.82);
+  border-color: rgba(74, 158, 255, 0.25);
+  color: #ccd4e0;
+}
+
+.intro[data-dark="true"] .step-card h3 {
+  color: #e8f0ff;
+}
+
+.intro[data-dark="true"] .step-card p {
+  color: #8899aa;
+}
