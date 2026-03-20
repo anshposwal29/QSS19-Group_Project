@@ -16,8 +16,13 @@
     },
     {
       "id": "c01-step-03",
-      "label": "We can filter through sugaring to find PFAS concentrations!",
-      "text": "More info! We can learn about nature and ourselves through this project."
+      "label": "Strong Bonds!",
+      "text": "Carbon-Flourine bonds are some of the strongest in organic chemistry, making them immune to damage from oil, water, or heat. By not breaking, these chemicals bioaccumulate, amplifying their harmfulness."
+    },
+    {
+      "id": "c01-step-04",
+      "label": "But not all PFAS are the same",
+      "text": "Ultra-short chain PFAS (with 2-3 carbon atoms) and short-chain PFAS (with 4-6 carbon atoms) easily dissolve in water, meaning they travel wherever water moves and are harder to filter.\nLong-chain PFAS (at least 7 carbon atoms) do not dissolve so easily in water, but their length allows them to be absorbed by our body in higher concentrations."
     }
   ]
 }
