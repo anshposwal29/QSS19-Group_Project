@@ -1,0 +1,20 @@
+{
+  "id": "chapter-03-leaf",
+  "title": "Leaf Stuff",
+  "order": 1,
+  "namespace": "c03",
+  "steps": [
+    {
+      "id": "c03-step1",
+      "label": " "
+    },
+    {
+      "id": "c03-step2",
+      "label": "There are dangerous objects"
+    },
+    {
+      "id": "c03-step3",
+      "label": "They are tiny -- practically invisible"
+    }
+]
+}
